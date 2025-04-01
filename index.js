@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 5000;
 
 // --- Middleware ---
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public')); // Phục vụ file tĩnh nếu có (vd: CSS riêng)
+app.use(express.static('views')); // Phục vụ file tĩnh nếu có (vd: CSS riêng)
 
 // --- Multer Configuration (Lưu file vào bộ nhớ)---
 const storage = multer.memoryStorage();
